@@ -20,8 +20,6 @@ always @(posedge clk ) begin
             counter <= 32'h0;
             leds[0]     <= ~leds[0];
             leds[1]     <= ~leds[1];
-            leds[2]     <= ~leds[2];
-            leds[4]     <= ~leds[3];
         end else begin
             counter <= counter + 1;
         end
